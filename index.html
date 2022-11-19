@@ -143,17 +143,37 @@
 				<tr>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">First Author</a></span>
+							<span style="font-size:24px"><a href="https://zengyu.me">Yu Zeng</a></span>
 						</center>
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Second Author</a></span>
+							<span style="font-size:24px"><a href="https://sites.google.com/site/zhelin625/">Zhe Lin</a></span>
 						</center>
 					</td>
 					<td align=center width=100px>
 						<center>
-							<span style="font-size:24px"><a href="https://en.wikipedia.org/wiki/James_J._Gibson">Third Author</a></span>
+							<span style="font-size:24px"><a href="">Jianming Zhang</a></span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="">Qing Liu</a></span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="">John Collomosse</a></span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="">Jason Kuen</a></span>
+						</center>
+					</td>
+					<td align=center width=100px>
+						<center>
+							<span style="font-size:24px"><a href="https://engineering.jhu.edu/vpatel36/">Vishal M. Patel</a></span>
 						</center>
 					</td>
 				</tr>
@@ -167,7 +187,7 @@
 					</td>
 					<td align=center width=120px>
 						<center>
-							<span style="font-size:24px"><a href='https://github.com/richzhang/webpage-template'>[GitHub]</a></span><br>
+							<span style="font-size:24px"><a href='https://github.com/zengxianyu/scenec'>[GitHub]</a></span><br>
 						</center>
 					</td>
 				</tr>
@@ -180,7 +200,7 @@
 			<tr>
 				<td width=260px>
 					<center>
-						<img class="round" style="width:500px" src="./resources/teaser.png"/>
+						<img class="round" style="width:500px" src="./resources/teaser_v1.png"/>
 					</center>
 				</td>
 			</tr>
@@ -188,7 +208,9 @@
 		<table align=center width=850px>
 			<tr>
 				<td>
-					This was a template originally made for <a href="http://richzhang.github.io/colorization/">Colorful Image Colorization</a>. The code can be found in this <a href="https://github.com/richzhang/webpage-template">repository</a>.
+				Examples of image synthesis from any-level semantic layouts.
+    (a) The coarsest layout, i.e. at the 0-th precision level, is equivalent to a text input; (d) the finest layout, i.e. at the highest level, is close to an accurate segmentation map; (a)-(d) intermediate level layouts (from coarse to fine), the shape control becomes tighter with increasing levels.
+    (e) We can specify different precision levels for different components, e.g. to include a 0-th level style indicator while the remaining regions are of higher levels. 
 				</td>
 			</tr>
 		</table>
@@ -200,7 +222,15 @@
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
-				This is my abstract.
+			We propose a new framework for conditional image synthesis from semantic layouts of any precision levels, ranging from pure text to a 2D semantic canvas with precise shapes. 
+				More specifically, the input layout consists of one or more semantic regions with free-form text descriptions and adjustable precision levels, 
+				which can be set based on the desired controllability. 
+The framework naturally reduces to text-to-image (T2I) at the lowest level with no shape information, and it becomes segmentation-to-image (S2I) at the highest level. 
+By supporting the levels in-between, our framework is flexible in assisting users of different drawing expertise and at different stages of their creative workflow. 
+We introduce several novel techniques to address the challenges coming with this new setup, including a pipeline for collecting training data; a precision-encoded mask 
+				pyramid and a text feature map representation to jointly encode precision level, semantics, and composition information; and a multi-scale guided diffusion model 
+				to synthesize images. To evaluate the proposed method, we collect a test dataset containing user-drawn layouts with diverse scenes and styles. 
+				Experimental results show that the proposed method can generate high-quality images following the layout at given precision, and compares favorably against existing methods. 
 			</td>
 		</tr>
 	</table>
