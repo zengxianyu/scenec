@@ -1,6 +1,6 @@
-@inproceedings{author20XXtitle,
-  title={Please cite me},
-  author={Author, First and Author, Second and Author, Third},
-  booktitle={Conference},
-  year={20XX}
+@article{zeng2022scenecomposer,
+  title={SceneComposer: Any-Level Semantic Image Synthesis},
+  author={Zeng, Yu and Lin, Zhe and Zhang, Jianming and Liu, Qing and Collomosse, John and Kuen, Jason and Patel, Vishal, M.},
+  journal={arxiv},
+  year={2022}
 }

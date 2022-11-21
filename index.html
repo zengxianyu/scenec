@@ -117,9 +117,9 @@
 
 <html>
 <head>
-	<title>This is my paper title</title>
+	<title>SceneComposer: Any-Level Semantic Image Synthesis</title>
 	<meta property="og:image" content="Path to my teaser.png"/> <!-- Facebook automatically scrapes this. Go to https://developers.facebook.com/tools/debug/ if you update and want to force Facebook to rescrape. -->
-	<meta property="og:title" content="Creative and Descriptive Paper Title." />
+	<meta property="og:title" content="SceneComposer: Any-Level Semantic Image Synthesis" />
 	<meta property="og:description" content="Paper description." />
 
 	<!-- Get from Google Analytics -->
@@ -137,7 +137,7 @@
 <body>
 	<br>
 	<center>
-		<span style="font-size:36px">Creative and Descriptive Paper Title</span>
+		<span style="font-size:36px">SceneComposer: Any-Level Semantic Image Synthesis</span>
 		<table align=center width=1000px>
 			<table align=center width=1000px>
 				<tr>
@@ -156,13 +156,13 @@
 							<span style="font-size:24px"><a href="">Jianming Zhang</a></span>
 						</center>
 					</td>
-				</tr>
-				<tr>
 					<td align=center width=100px>
 						<center>
 							<span style="font-size:24px"><a href="">Qing Liu</a></span>
 						</center>
 					</td>
+				</tr>
+				<tr>
 					<td align=center width=100px>
 						<center>
 							<span style="font-size:24px"><a href="">John Collomosse</a></span>
@@ -180,7 +180,7 @@
 					</td>
 				</tr>
 			</table>
-			<table align=center width=250px>
+			<table align=center width=600px>
 				<tr>
 					<td align=center width=120px>
 						<center>
@@ -190,6 +190,11 @@
 					<td align=center width=120px>
 						<center>
 							<span style="font-size:24px"><a href='https://github.com/zengxianyu/scenec'>[GitHub]</a></span><br>
+						</center>
+					</td>
+					<td align=center width=360px>
+						<center>
+							<span style="font-size:24px"><a href=''>[Web App] (Coming soon)</a></span><br>
 						</center>
 					</td>
 				</tr>
@@ -220,7 +225,7 @@
 
 	<hr>
 
-	<table align=center width=850px>
+	<table align=center width=1000px>
 		<center><h1>Abstract</h1></center>
 		<tr>
 			<td>
@@ -236,8 +241,8 @@ We introduce several novel techniques to address the challenges coming with this
 			</td>
 		</tr>
 	</table>
-	<br>
 
+	<br>
 	<hr>
 	<center><h1>Demo Video</h1></center>
 	<p align="center">
@@ -246,63 +251,177 @@ We introduce several novel techniques to address the challenges coming with this
 	</video>
 	</p>
 
-	<table align=center width=800px>
-		<br>
-		<tr>
-			<center>
-				<span style="font-size:28px"><a href=''>[Slides]</a>
-				</span>
-			</center>
-		</tr>
-	</table>
+	<br>
 	<hr>
-
-	<center><h1>Code</h1></center>
-
-	<table align=center width=420px>
-		<center>
-			<tr>
-				<td>
-				</td>
-			</tr>
-		</center>
-	</table>
-	<table align=center width=400px>
+	<table align=center width=1000px>
+		<center><h1>Method</h1></center>
 		<tr>
-			<td align=center width=400px>
-				<center>
-					<td><img class="round" style="width:450px" src="./resources/method_diagram.png"/></td>
-				</center>
+			<td style="text-align: center"><img width=1000pt src="resources/fig1.png"></td>
+		</tr>
+		<tr>
+			<td>
+An overview of the proposed method. We provide an intuitive interface where users can easily define a layout using a semantic brush associated with a free-form text description and adjustable precision level. The masks, regional descriptions, and precision levels are jointly encoded into a text feature pyramid, and then translated into an image by a multi-scale guided diffusion model. 
 			</td>
 		</tr>
 	</table>
-	<table align=center width=850px>
-		<center>
-			<tr>
-				<td>
-					Short description if wanted
-				</td>
-			</tr>
-		</center>
+
+
+	<br>
+	<hr>
+	<center><h1>Results at Different Levels</h1></center>
+	<p align="center">
+	<table align=center width=1000px>
+		<tr>
+			<td style="text-align: center"><img width=170pt src="resources/results_levels/in3.png"></td><td style="text-align: center"><img width=170pt src="resources/results_levels/03.jpg"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_levels/13.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_levels/23.jpg"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_levels/33.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_levels/43.jpg"></td>
+		</tr>
+		<tr>
+			<td style="text-align: center"><img width=170pt src="resources/results_levels/in2.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_levels/02.jpg"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_levels/12.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_levels/22.jpg"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_levels/32.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_levels/42.jpg"></td>
+		</tr>
+		<tr>
+						
+			<td></td><td style="text-align: center">Level 0</td><td style="text-align: center">Level 3</td><td style="text-align: center">Level 4</td><td style="text-align: center">Level 5</td><td style="text-align: center">Level 6</td>
+						
+		</tr>
 	</table>
-	<table align=center width=800px>
-		<br>
-		<tr><center>
-			<span style="font-size:28px">&nbsp;<a href='https://github.com/richzhang/webpage-template'>[GitHub]</a>
-			</center>
-		</span>
+	</p>
+
+	<br>
+	<hr>
+	<center><h1>Results with Region-Specific Levels</h1></center>
+	<p align="center">
+	<table align=center width=1000px>
+		<tr>
+			<td style="text-align: center"><img width=170pt src="resources/results_mix/0in.png"></td><td style="text-align: center"><img width=170pt src="resources/results_mix/01.jpg"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_mix/02.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_mix/03.jpg"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_mix/04.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_mix/05.jpg"></td>
+		</tr>
+		<tr>
+			<td style="text-align: center"><img width=170pt src="resources/results_mix/1in.png"></td><td style="text-align: center"><img width=170pt src="resources/results_mix/11.jpg"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_mix/12.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_mix/13.jpg"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_mix/14.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_mix/15.jpg"></td>
+		</tr>
 	</table>
+	<table align=center width=1000px>
+		<tr>
+						
+			<td style="text-align: center" width=1000px>Numbers indicate the precision levels. We sample five images from an input layout. The objects with a higher precision level has a more varied shape.</td>
+						
+		</tr>
+	</table>
+	</p>
+
+	<br>
+	<hr>
+	<center><h1>Text-to-Image Generation</h1></center>
+	<p align="center">
+	<table align=center width=1000px>
+		<tr>
+			<td style="text-align: center" width=600px>Albert Einstein in spacesuit on a horse</td>
+			<td style="text-align: center" width=600px>A tornado made of bees crashing into a skyscraper. painting in the style of watercolor.
+</td>
+		</tr>
+	</table>
+	<table align=center width=1000px>
+		<tr>
+			<td style="text-align: center"><img width=170pt src="resources/results_text/00.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_text/0in.png"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_text/02.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_text/10.jpg"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_text/1in.png"></td><td style="text-align: center"><img width=170pt src="resources/results_text/12.jpg"></td>
+		</tr>
+		<tr>
+			<td style="text-align: center">w/o Layout</td><td style="text-align: center">Layout Guidance</td><td style="text-align: center">with Layout</td>
+			<td style="text-align: center">w/o Layout</td><td style="text-align: center">Layout Guidance</td><td style="text-align: center">with Layout</td>
+		</tr>
+	</table>
+	</p>
+
+	<br>
+	<hr>
+	<center><h1>Segmentation-to-Image Generation</h1></center>
+	<p align="center">
+	<table align=center width=1000px>
+		<tr>
+			<td style="text-align: center"><img width=170pt src="resources/results_seg/0in.png"></td><td style="text-align: center"><img width=170pt src="resources/results_seg/01.jpg"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_seg/02.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_text/1in.png"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_seg/11.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_seg/12.jpg"></td>
+		</tr>
+		<tr>
+			<td style="text-align: center">Input</td><td style="text-align: center"><a href="https://nvlabs.github.io/SPADE/">SPADE</a></td><td style="text-align: center">Ours</td>
+			<td style="text-align: center">Input</td><td style="text-align: center"><a href="https://nvlabs.github.io/SPADE/">SPADE</a></td><td style="text-align: center">Ours</td>
+		</tr>
+	</table>
+	</p>
+
+
+	<br>
+	<hr>
+	<center><h1>Inpainting/Editing Results</h1></center>
+	<p align="center">
+	<table align=center width=1000px>
+		<tr>
+			<td style="text-align: center"><img width=170pt src="resources/results_inpaint/10.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_inpaint/11.png"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_inpaint/12.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_inpaint/20.jpg"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_inpaint/21.png"></td><td style="text-align: center"><img width=170pt src="resources/results_inpaint/22.jpg"></td>
+		</tr>
+		<tr>
+			<td style="text-align: center">Image</td><td style="text-align: center">Layout</td><td style="text-align: center">Result</td><td style="text-align: center">Image</td><td style="text-align: center">Layout</td><td style="text-align: center">Result</td>
+		</tr>
+		<tr>
+			<td style="text-align: center"><img width=170pt src="resources/results_inpaint/30.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_inpaint/31.png"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_inpaint/32.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_inpaint/40.jpg"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_inpaint/41.png"></td></td><td style="text-align: center"><img width=170pt src="resources/results_inpaint/42.jpg"></td>
+		</tr>
+		<tr>
+			<td style="text-align: center">Image</td><td style="text-align: center">Layout</td><td style="text-align: center">Result</td><td style="text-align: center">Image</td><td style="text-align: center">Layout</td><td style="text-align: center">Result</td>
+		</tr>
+	</table>
+	</p>
+
+
+	<br>
+	<hr>
+	<center><h1>Concepts Interpolation</h1></center>
+	<p align="center">
+	<table align=center width=1000px>
+		<tr>
+			<td style="text-align: center">a photo of zebra <span style='font-size:30px;'>&#10145;</span> a photo of watermelon</td>
+		</tr>
+	</table>
+	<table align=center width=1000px>
+		<tr>
+			<td style="text-align: center"><img width=170pt src="resources/results_interp/1in.png"></td><td style="text-align: center"><img width=170pt src="resources/results_interp/11.jpg"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_interp/12.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_interp/13.jpg"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_interp/14.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_interp/15.jpg"></td>
+		</tr>
+	</table>
+	<table align=center width=1000px>
+		<tr>
+			<td style="text-align: center">a photo of bird <span style='font-size:30px;'>&#10145;</span> a photo of cat</td>
+		</tr>
+	</table>
+	<table align=center width=1000px>
+		<tr>
+			<td style="text-align: center"><img width=170pt src="resources/results_interp/2in.png"></td><td style="text-align: center"><img width=170pt src="resources/results_interp/21.jpg"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_interp/22.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_interp/23.jpg"></td>
+			<td style="text-align: center"><img width=170pt src="resources/results_interp/24.jpg"></td><td style="text-align: center"><img width=170pt src="resources/results_interp/25.jpg"></td>
+		</tr>
+	</table>
+	</p>
+
+
 	<br>
 	<hr>
 	<table align=center width=450px>
 		<center><h1>Paper and Supplementary Material</h1></center>
 		<tr>
 			<td><a href=""><img class="layered-paper-big" style="height:175px" src="./resources/paper.png"/></a></td>
-			<td><span style="font-size:14pt">F. Author, S. Author, T. Author.<br>
-				<b>Creative and Descriptive Paper Title.</b><br>
-				In Conference, 20XX.<br>
+			<td><span style="font-size:14pt">
+				<b>SceneComposer: Any-Level Semantic Image Synthesis.</b><br>
+				Preprint, 2022.<br>
 				(hosted on <a href="">ArXiv</a>)<br>
-				<!-- (<a href="./resources/camera-ready.pdf">camera ready</a>)<br> -->
 				<span style="font-size:4pt"><a href=""><br></a>
 				</span>
 			</td>
@@ -324,10 +443,10 @@ We introduce several novel techniques to address the challenges coming with this
 	<table align=center width=900px>
 		<tr>
 			<td width=400px>
-				<left>
-					<center><h1>Acknowledgements</h1></center>
+				<center>
+					<h1>Acknowledgements</h1>
 					This template was originally made by <a href="http://web.mit.edu/phillipi/">Phillip Isola</a> and <a href="http://richzhang.github.io/">Richard Zhang</a>.
-				</left>
+				</center>
 			</td>
 		</tr>
 	</table>
