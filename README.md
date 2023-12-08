@@ -9,3 +9,6 @@ Examples of image synthesis from any-level semantic layouts. (a) The coarsest la
 # Interactive demo
 
 Please fill out this [agreement form](https://forms.microsoft.com/r/Rq2xzdNsnv) to request access. We will send your unique link to access the demo
+
+# Code
+This is my internship project at Adobe. I am still waiting for the approval from Adobe for code release. Please contact the Adobe affiliated authors for more details. Meanwhile, I will be glad to assist if you are interested in implementing the method. 
